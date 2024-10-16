@@ -6,9 +6,10 @@
    --backgroundColorBlue: #3139fb;
    --backgroundColorBlueDark: #2702c2;
    --backgroundColorPink: #ff5060;
+   --backgroundColorPinkDark: #d83744;
    --backgroundColorPinkLight: #ff9999;
    
-   --textColorWhite: #ffffff;
+   --textColorWhite: #f0f0f0;
    --textColorBlack: #000000;
    --textColorGray: #696969;
    --textColorWheat: #fffcec;
@@ -21,4 +22,154 @@
    --h1FontSize: 52px;
    --h2FontSize: 32px;
    --h3FontSize: 18px;
+}
+
+html {
+	color: var(--textColorBlack);
+	background-color: var(--backgroundColorWhite);
+	font-family: 'Rubik', Arial, Helvetica, sans-serif;
+	font-size: var(--bodyFontSize);
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+body {
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+
+
+
+
+h1, h2, h3 {
+	font-weight: 700;
+	margin: 0;
+}
+
+h1, h2 {
+	line-height: 1.2;
+}
+
+h3 {
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.28em;
+}
+
+a:hover {
+	opacity: 75%;
+}
+
+p {
+	margin: 0;
+}
+
+
+
+
+
+header, .section.hero {
+	color: var(--textColorWhite);
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	a {
+		color: var(--textColorWhite);
+	}
+}
+
+.container-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+}
+
+.header-links {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 1rem;
+	li {
+		list-style: none;
+	}
+}
+
+
+
+
+
+.section.hero {
+	min-height: 100vh;
+	background-color: var(--backgroundColorBlueDark);
+}
+
+.container-hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+	> * {
+		width: 50%;
+	}
+}
+
+.hero-info-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.hero-img {
+	height: 54vh;
+	background-color: var(--backgroundColorWheat);
+	border-radius: 40px;
+}
+
+
+
+
+
+button {
+	font-size: var(--bodyFontSize);
+	color: var(--textColorBlueDark);
+	font-weight: 500;
+	padding: 12px 32px;
+	border: 3px var(--backgroundColorBlueDark) solid;
+	background-color: var(--backgroundColorWhite);
+	border-radius: 12px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+button:hover {
+	color: var(--textColorWhite);
+	background-color: var(--backgroundColorBlueDark);
+}
+
+.btn-accent {
+	border-style: none;
+	background-color: var(--backgroundColorPink);
+	color: var(--textColorWhite);
+}
+
+.btn-accent:hover {
+	background-color: var(--backgroundColorPinkDark);
 }
