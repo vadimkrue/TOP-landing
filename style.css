@@ -21,7 +21,7 @@
    --bodyFontSize: 18px;
    --h1FontSize: 52px;
    --h2FontSize: 32px;
-   --h3FontSize: 18px;
+   --h3FontSize: 24px;
 }
 
 html {
@@ -98,10 +98,13 @@ p {
 	text-align: right;
 }
 
+.text-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
 a {
-	text-decoration: underline;
-	text-decoration-thickness: 1px;
-	text-underline-offset: 0.28em;
+	text-decoration: none;
 }
 
 a:hover {
@@ -219,8 +222,7 @@ header {
 
 .section-quote {
 	background-color: var();
-	height: 100vh;
-	padding: 6rem;
+	min-height: 80vh;	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -237,6 +239,27 @@ header {
 	max-width: 40ch;
 }
 
+
+
+.cta-frame {
+	padding: 4rem 4rem;
+	background-color: var(--backgroundColorBlue);
+	color: var(--textColorWhite);
+	border-radius: 28px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
+
+
+footer {
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 button {
