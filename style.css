@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+   --backgroundColorWhite: #ffffff;
+   --backgroundColorWheat: #fffcec;
+   --backgroundColorBlue: #3139fb;
+   --backgroundColorBlueDark: #2702c2;
+   --backgroundColorPink: #ff5060;
+   --backgroundColorPinkLight: #ff9999;
+   
+   --textColorWhite: #ffffff;
+   --textColorBlack: #000000;
+   --textColorGray: #696969;
+   --textColorWheat: #fffcec;
+   --textColorBlue: #3139fb;
+   --textColorBlueDark: #2702c2;
+   --textColorPink: #ff5060;
+   --textColorPinkLight: #ff9999;
+
+   --bodyFontSize: 18px;
+   --h1FontSize: 52px;
+   --h2FontSize: 32px;
+   --h3FontSize: 18px;
+}
